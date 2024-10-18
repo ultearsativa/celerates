@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EaseMindly - Home</title>
-
-    <!-- Mengimpor Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Mengimpor Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-    <!-- Mengimpor Font Teachers dari Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet" />
-
-    <!-- Mengimpor file CSS eksternal -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
-<body class="bg-gray-200">
-    <header class="bg-yellow-500 p-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img alt="EaseMindly Logo" class="mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/dMDosgO8A5LBBZDG8TnScJzEP5sUQGiFAW5fHgeb6AmP4qjTA.jpg" width="50" />
-            <span class="text-2xl font-bold">EaseMindly</span>
-        </div>
-        <nav class="flex space-x-6 ml-auto mr-6">
-            <a class="text-black hover:text-blue-700" href="index.html">Home</a>
-            <a class="text-black hover:text-blue-700" href="meditasi.html">Meditasi</a>
-            <a class="text-black hover:text-blue-700" href="artikel.html">Artikel</a>
-            <a class="text-black hover:text-blue-700" href="playlist.html">Playlist Musik</a>
-            <a class="text-black hover:text-blue-700" href="komunitas.html">Komunitas</a>
-            <a class="text-black hover:text-blue-700" href="chat-ai.html">Chat AI</a>
-            <a class="bg-blue-950 text-white px-4 py-2 rounded hover:bg-blue-700" href="login.html">Masuk</a>
-        </nav>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><3</div>
+      <nav>
+        <a class="active" href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-
-    <main class="relative bg-cover bg-center h-screen" style="background-image: url('https://storage.googleapis.com/a1aa/image/XgdfPW6n2T0kMinF03MXSKe7qjgdhegCcdZ8mw5Cpfw4grOOB.jpg');">
-        <div class="flex flex-col items-center justify-center h-full text-white p-4">
-            <h1 class="text-4xl font-bold mb-4">Selamat datang di EaseMindly</h1>
-            <p class="text-lg mb-6">Temukan cara baru untuk merilekskan pikiran Anda dan meningkatkan kesehatan mental Anda.</p>
-            <div class="relative w-full max-w-md">
-                <input class="chat-input w-full p-3 border rounded bg-gray-300 pr-12" type="text" placeholder="Tanya AI kami..." />
-                <button class="absolute right-2 top-1/2 transform -translate-y-1 bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Kirim</button>
-            </div>
+    
+    <div class="main-content">
+      <div class="text">
+        <h1>Hi, <br/> I’m <span>Haikal</span> <br/> Network Engineering</h1>
+      </div>
+      <div class="image">
+        <div class="bg-shape"></div>
+        <img src="haikal.png" alt="Portrait of Haikal"/>
+      </div>
+    </div>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>A second-year student focused on network engineering, cybersecurity, and the Internet of Things (IoT), I have basic
+          programming skills, proficiency in network topology analysis, and system management abilities. I am a lifelong learner with
+          strong digital literacy, capable of working independently and as a team member. Dedicated to fostering innovation in
+          information and communication technology, I am enthusiastic about applying my knowledge and skills in a professional
+          environment. </p>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="text">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I’ve worked on:</p>
+      </div>
+      <div class="project-list">
+        <div class="project">
+          <h3>Project Base Learning – Smart Door For Classroom</h3>
+          <p>Designing the physical hardware components such as sensors, actuators, and electronic devices needed for the smart door system, writing code to integrate the selected hardware components with ESP32 and ESP32-CAM microcontrollers to ensure proper communication and functionality, and conducting feasibility and performance tests on the hardware to verify that the smart door system functions correctly under various conditions and environments.</p>
         </div>
-        <div class="meditation-box">
-            <h2 class="text-lg font-semibold">Teknik Meditasi</h2>
-            <div class="meditation-scroll">
-                <div class="meditation-item">
-                    <img src="https://storage.googleapis.com/a1aa/image/image1.jpg" alt="Meditasi Perhatian Penuh" />
-                    <p>1. Meditasi Perhatian Penuh</p>
-                </div>
-                <div class="meditation-item">
-                    <img src="https://storage.googleapis.com/a1aa/image/image2.jpg" alt="Meditasi Pernapasan" />
-                    <p>2. Meditasi Pernapasan</p>
-                </div>
-                <div class="meditation-item">
-                    <img src="https://storage.googleapis.com/a1aa/image/image3.jpg" alt="Meditasi Mantra" />
-                    <p>3. Meditasi Mantra</p>
-                </div>
-                <div class="meditation-item">
-                    <img src="https://storage.googleapis.com/a1aa/image/image4.jpg" alt="Meditasi Transendental" />
-                    <p>4. Meditasi Transendental</p>
-                </div>
-            </div>
+        <div class="project">
+          <h3>Final Project in SMKN 1 CIBINONG </h3>
+          <p>Gathering the technical needs of users who use the network, collecting network equipment data with appropriate technology, setting up and installing network cables, configuring routing on network devices in autonomous systems, monitoring security and user account settings on computers, configuring switches on the network, and installing a wireless network.</p>
         </div>
-    </main>    
+        <div class="project">
+          <h3>Project Base Learning – Automatic Plant Watering System </h3>
+          <p>Assembling hardware components into a functional unit and programming Arduino and NodeMCU to control sensors and actuators.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+      <a href="https://api.whatsapp.com/send/?phone=6285882425309&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/haikaalfd?igsh=MXFoYzd6aG1oZWMyMg=="><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/ultearsativa"><i class="fab fa-github"></i></a>
+    </footer>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script> 
 </body>
-
 </html>

@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4ff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header nav a.active {
+  border-bottom: 2px solid #3b82f6;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.main-content .text {
+  max-width: 50%;
+}
+
+.main-content .text h1 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.main-content .text h1 span {
+  color: #3b82f6;
+}
+
+.main-content .text p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.main-content .text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.main-content .image {
+  position: relative;
+}
+
+.main-content .image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.main-content .image .bg-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.about, .projects {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about .text, .projects .text {
+  max-width: 70%;
+  text-align: center;
+}
+
+.about h2, .projects h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.projects .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.projects .project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px); /* Menjadikan 3 kolom secara rata */
+}
+
+.projects .project h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.projects .project p {
+  font-size: 16px;
+  color: #666;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .projects .project {
+    width: calc(50% - 20px); /* Dua kolom di layar lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects .project {
+    width: 100%; /* Satu kolom di layar kecil */
+  }
+}
